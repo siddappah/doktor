@@ -24,8 +24,8 @@ export class RegisterComponent implements OnInit {
     ]),
     mobile: new FormControl('', [
       Validators.required,
-      Validators.maxLength(12),
-      Validators.pattern('[0-9]')
+      Validators.minLength(10),
+      Validators.pattern('[0-9]{10}')
     ]),
     doctors: new FormControl(3, [
       Validators.required,
