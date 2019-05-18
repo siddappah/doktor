@@ -8,19 +8,24 @@
           <mat-tab label="General Info">
               <div class="example-container">
                 <mat-form-field>
-                  <input matInput formControlName="tan" placeholder="TAN Number">
+                  <input matInput formControlName="tan" length="10" placeholder="TAN Number">
+                  <mat-hint align="end">Valid TAN Number required.</mat-hint>
                 </mat-form-field>
                 <mat-form-field>
                     <input matInput formControlName="name" placeholder="Clinic Name">
+                    <mat-hint align="end">Max 40 charecters allowed as a clinic name.</mat-hint>
                   </mat-form-field>
                   <mat-form-field>
                       <input matInput formControlName="email" placeholder="Email id">
+                      <mat-hint align="end">Valid Email-id require</mat-hint>
                     </mat-form-field>
                     <mat-form-field>
                         <input matInput formControlName="mobile" placeholder="Mobile Number">
+                        <mat-hint align="end">Min 10 digits number and valid mobile number require.</mat-hint>
                       </mat-form-field>
                       <mat-form-field>
                           <input matInput formControlName="doctors" placeholder="Number of Doctors">
+                          <mat-hint align="end">How many doctors your clinic have?</mat-hint>
                         </mat-form-field>
 
               </div>
