@@ -3,7 +3,7 @@
       <h2>Registration</h2>
   </div>
   <div class="col-md-12">
-      <form [formGroup]="profileForm" (onsubmit)="Save()">
+      <form [formGroup]="profileForm" (ngSubmit)="Save()">
       <mat-tab-group>
           <mat-tab label="General Info">
               <div class="example-container">
@@ -31,7 +31,17 @@
               </div>
           </mat-tab>
         <mat-tab label="Subscribe">
-            <button type="submit" mat-button class="btn btn-success">Click me!</button>
+            <div class="example-container">
+                <mat-form-field>
+                  <mat-select placeholder="Choose Subscription Type Here" formControlName="subscribe">
+                    <mat-option value="0">Free</mat-option>
+                    <mat-option value="25">3 Months</mat-option>
+                    <mat-option value="45">6 Months</mat-option>
+                    <mat-option value="85">1 Year</mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <button type="submit" mat-button class="btn btn-success">Click me!</button>
+              </div>
         </mat-tab>
       </mat-tab-group>
       </form>
