@@ -6,8 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegisterComponent } from './register/register.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { MatTabsModule } from '@angular/material';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatTabsModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 
 
 @NgModule({
@@ -20,7 +19,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     BrowserAnimationsModule,
     AppRoutingModule,
     MatTabsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
