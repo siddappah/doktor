@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegisterComponent } from './register/register.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { MatTabsModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 
@@ -18,6 +19,7 @@ import { MatTabsModule, MatFormFieldModule, MatInputModule } from '@angular/mate
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     MatTabsModule,
     MatFormFieldModule,
     MatInputModule

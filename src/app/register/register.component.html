@@ -3,15 +3,27 @@
       <h2>Registration</h2>
   </div>
   <div class="col-md-12">
+      <form [formGroup]="profileForm">
       <mat-tab-group>
           <mat-tab label="General Info">
               <div class="example-container">
                 <mat-form-field>
-                  <input matInput placeholder="TAN Number">
+                  <input matInput formControlName="tan" placeholder="TAN Number">
                 </mat-form-field>
+                <mat-form-field>
+                    <input matInput formControlName="name" placeholder="Clinic Name">
+                  </mat-form-field>
+                  <mat-form-field>
+                      <input matInput formControlName="email" placeholder="Email id">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput formControlName="mobile" placeholder="Mobile Number">
+                      </mat-form-field>
+
               </div>
           </mat-tab>
         <mat-tab label="Subscribe"> Content 2 </mat-tab>
       </mat-tab-group>
+      </form>
   </div>
 </div>
