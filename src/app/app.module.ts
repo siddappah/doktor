@@ -7,7 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { MatTabsModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatTabsModule, MatFormFieldModule, MatInputModule, MatButtonModule } from '@angular/material';
 
 
 @NgModule({
@@ -22,7 +22,8 @@ import { MatTabsModule, MatFormFieldModule, MatInputModule } from '@angular/mate
     ReactiveFormsModule,
     MatTabsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

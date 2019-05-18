@@ -1,9 +1,9 @@
-<div class="row">
+<div class="row registration">
   <div class="col-md-12">
       <h2>Registration</h2>
   </div>
   <div class="col-md-12">
-      <form [formGroup]="profileForm">
+      <form [formGroup]="profileForm" (onsubmit)="Save()">
       <mat-tab-group>
           <mat-tab label="General Info">
               <div class="example-container">
@@ -19,10 +19,15 @@
                     <mat-form-field>
                         <input matInput formControlName="mobile" placeholder="Mobile Number">
                       </mat-form-field>
+                      <mat-form-field>
+                          <input matInput formControlName="doctors" placeholder="Number of Doctors">
+                        </mat-form-field>
 
               </div>
           </mat-tab>
-        <mat-tab label="Subscribe"> Content 2 </mat-tab>
+        <mat-tab label="Subscribe">
+            <button type="submit" mat-button class="btn btn-success">Click me!</button>
+        </mat-tab>
       </mat-tab-group>
       </form>
   </div>
